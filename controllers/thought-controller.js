@@ -90,5 +90,7 @@ const thoughtController = {
 
 };
 
+
+// Export
 module.exports = thoughtController;
 
