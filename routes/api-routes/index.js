@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 // Imports
 const userRoutes = require('./user-routes');
-const thoughtRoutes = require('./thought-routes');
+// const thoughtRoutes = require('./thought-routes');
 
 // endpoints for routes
 router.use('/user',userRoutes);
