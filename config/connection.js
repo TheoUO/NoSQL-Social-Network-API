@@ -1,14 +1,7 @@
-// Importing the mongoose library
-const mongoose = require('mongoose');
+const {connect, connection} = require('mongoose');
 
-// Connecting to the database
-mongoose.connect(process.env.MONOGDB_URI || 'mongodb://127.0.0.1:27017/social-network',
-{
-    useNewUrlParser: true, 
-    useUnifiedTopology: true,
-});
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/NoSQLsocialnetwork';
 
-// Exporting the connection to the database as a module
-mongoose.set('debug', true);
+connect(connectionString);
 
-module.exports = mongoose.connection;
+module.exports = connection;
