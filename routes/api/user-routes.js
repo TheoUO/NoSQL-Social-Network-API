@@ -8,7 +8,7 @@ const {
   deleteUserById,
   addFriend,
   removeFriend,
-} = require('../../controllers/thought-controller');
+} = require('../../controllers/user-controller');
 
 
 // /api/users
